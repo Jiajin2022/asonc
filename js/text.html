@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 500px;
+            background: red;
+            position:fixed;
+            top:0;
+            z-index:-9999;
+        }
+        .box2 {
+            width: 100%;
+            height: 500px;
+            background: blue;
+            position: relative;
+            top:0;
+            z-index:1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box1" id="box1"></div>
+    <div class="box2" id="box2"></div>
+</body>
+
+</html>
+<script src="../bootstrap-3.2.0/js/jquery-1.11.3.min.js"></script>
+<script>
+    // $(document).ready(function () {
+    //     $(window).scroll(function () {
+    //         var scrolltop = $(window).scrollTop();
+    //         console.log(scrolltop);
+    //         if (scrolltop != 0) {
+    //             $(".box1").css("position", "fixed");
+    //         } else {
+    //             $(".box1").css("position", "static");
+    //         }
+    //     });
+    // });
+</script>

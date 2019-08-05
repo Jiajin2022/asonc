@@ -1,0 +1,1296 @@
+/* 首页公共样式 */
+.heading {
+    font-size:50px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    color:#505050;
+    text-align:center;
+}
+.more{
+    font-size:16px;
+    color:#7b7b7b;
+}
+.more:hover{
+    color:#46959d;
+    text-decoration: none;
+}
+
+
+/* =================================================头部开始 */
+header {
+    width: 100%;
+    background: #fcfcfc;
+    padding: 20px 0;
+    position:fixed;
+    top:0;
+    background:rgba(255,255,255,0.3);
+    z-index:999;
+}
+
+header .glyphicon {
+    display: none;
+}
+
+header .header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .xssm-img {
+    display: none;
+}
+
+header .header-nav a {
+    font-size: 16px;
+    color: #6e6e6e;
+}
+
+header .header-nav a:hover {
+    color: #559da4;
+    text-decoration: none;
+}
+
+header .asonc-tel {
+
+    text-align: right;
+    font-size: 16px;
+    color: #afafaf;
+}
+
+header .asonc-tel span {
+    font-size: 16px;
+    color: #4b989f;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+}
+
+header .xs-tel {
+    display: none;
+}
+@media(min-width:993px){
+    .hamburger {
+        display: none;
+    }
+}
+@media (max-width:992px) {
+    header .row {
+        display: flex;
+        align-items: center;
+    }
+
+    header .leftLogo {
+        display: none;
+    }
+
+    header .glyphicon {
+        padding: 3px;
+        border: 1px solid #6e6e6e;
+        border-radius: 2px;
+        font-size: 24px;
+        color: #6e6e6e;
+        display: inline-block;
+    }
+
+    .hamburger {
+        width: 100%;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        display: none;
+        z-index:9999;
+    }
+
+    header .hamburger-list {
+        width: 100%;
+        padding: 10px 0;
+        list-style: none;
+        margin: 0;
+
+    }
+
+    header .hamburger-list li {
+        padding: 10px 0;
+        width: 23%;
+        text-align: center;
+        /* border-bottom:2px solid #4b989f; */
+        margin: 0 auto;
+    }
+
+    header .hamburger-list li::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #4b989f;
+        display: block;
+        position: relative;
+        left: 50%;
+        transition: all 0.3s;
+
+    }
+
+    header .hamburger-list li:hover::after {
+        left: 0;
+        width: 100%;
+    }
+
+    header .hamburger-list li a {
+        font-size: 18px;
+        color: #4b989f;
+    }
+
+    header .hamburger-list li a:hover {
+        text-decoration: none;
+    }
+
+    header .header-nav {
+        display: none;
+    }
+
+    header .xssm-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    header .asonc-tel {
+        text-align: right;
+        font-size: 13px;
+        color: #afafaf;
+        margin: 0;
+    }
+
+    header .asonc-tel span {
+        font-size: 13px;
+        color: #4b989f;
+        font-weight: bold;
+    }
+
+    header .asonc-tel .xs-tel {
+        font-size: 12px;
+        color: #4b989f;
+        font-weight: bold;
+        display: block;
+    }
+}
+
+@media (max-width:768px) {
+    header .asonc-tel {
+        text-align: right;
+        font-size: 12px;
+        color: #afafaf;
+        margin: 0;
+    }
+
+    header .asonc-tel span {
+        font-size: 12px;
+        color: #4b989f;
+        font-weight: bold;
+        display: none;
+    }
+
+    header .xs-tel {
+        text-align: right;
+        font-size: 12px;
+        color: #4b989f;
+        font-weight: bold;
+        display: block;
+    }
+}
+
+@media (max-width:576px) {
+    header{
+        padding:9px 0;
+    }
+    header .xs-t {
+        padding-left: 0;
+    }
+
+    header .asonc-tel {
+        text-align: right;
+        font-size: 12px;
+        color: #afafaf;
+        margin: 0;
+    }
+
+    header .asonc-tel span {
+        display: none;
+    }
+
+    header .xs-tel {
+        text-align: right;
+        font-size: 12px;
+        color: #4b989f;
+        font-weight: bold;
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (max-width:320px) {
+    header .glyphicon {
+        padding: 3px;
+        border: 1px solid #6e6e6e;
+        border-radius: 2px;
+        font-size: 16px;
+        color: #6e6e6e;
+        display: inline-block;
+    }
+
+    header .hamburger-list li a {
+        font-size: 14px;
+        color: #4b989f;
+    }
+
+    header .xs-t {
+        padding-left: 0;
+    }
+
+    header .asonc-tel {
+        text-align: right;
+        font-size: 9px;
+        color: #afafaf;
+        margin: 0;
+    }
+
+    header .asonc-tel span {
+        display: none;
+    }
+
+    header .xs-tel {
+        text-align: right;
+        font-size: 10px;
+        color: #4b989f;
+        font-weight: bold;
+        display: block;
+    }
+}
+/* ==========================================================头部结束 */
+/* ==========================================================banner图开始 */
+.banner{
+    width:100%;
+    position: fixed;
+    top:0;
+    z-index:0;
+    
+}
+
+/* =====================================================================banner图结束 */
+/*品牌介绍开始*/
+.brand{
+    width:100%;
+    background-size:100%;
+    position: relative;
+    
+    /* padding:125px 0 163px 0; */
+}
+.brand img{
+    width:100%;
+
+}
+.brand .brand-word{
+    width:100%;
+    position: absolute;
+    top:30%;
+}
+.brand .brand-word h1{
+    margin:0;
+    text-align:center;
+
+}
+.brand .brand-word h4{
+    margin:20px 0 33px;
+    text-align:center;
+    font-size:16px;
+}
+.brand .brand-word a{
+    margin:20px 0 34px;
+    text-align:center;
+}
+.brand .brand-word p{
+    /*width:576px;*/
+    margin:0 auto 30px;
+    font-size:16px;
+    line-height:32px;
+    text-align:center;
+}
+.brand .brand-word a{
+    color:#7f7f7f;
+    font-size:16px;
+}
+.brand .brand-word a:hover{
+    color:#46959d;
+}
+@media screen and (min-width:1366px){
+    .brand .brand-word{
+        width:100%;
+        position: absolute;
+        top:26%;
+    }
+    .brand .brand-word h4{
+        margin:11px 0;
+        text-align:center;
+        font-size:14px;
+    }
+    .brand .brand-word p{
+        width:576px;
+        margin:0 auto 20px;
+        font-size:14px;
+        line-height:28px;
+        text-align:center;
+    }
+}
+@media screen and (max-width:1366px){
+    .brand .brand-word{
+        width:100%;
+        position: absolute;
+        top:26%;
+    }
+    .brand .brand-word h4{
+        margin:11px 0;
+        text-align:center;
+        font-size:14px;
+    }
+    .brand .brand-word p{
+        
+        margin:0 auto 20px;
+        font-size:14px;
+        line-height:28px;
+        text-align:center;
+    }
+}
+@media screen and (max-width:1100px){
+    .heading {
+        font-size:40px;
+    }
+    .brand .brand-word{
+        width:100%;
+        position: absolute;
+        top:18%;
+    }
+    .brand .brand-word h4{
+        margin:11px 0;
+        text-align:center;
+        font-size:14px;
+    }
+    .brand .brand-word p{
+        
+        margin:0 auto 20px;
+        font-size:14px;
+        line-height:28px;
+        text-align:center;
+    }
+}
+@media screen and  (min-width:768px) and (max-width:991px){
+    .heading {
+        font-size:30px;
+    }
+    .brand .brand-word{
+        width:100%;
+        position: absolute;
+        top:18%;
+    }
+    .brand .brand-word h4{
+        margin:11px 0;
+        text-align:center;
+        font-size:12px;
+    }
+    .brand .brand-word p{
+        
+        margin:0 auto 6px;
+        font-size:12px;
+        line-height:23px;
+        text-align:center;
+    }
+}
+@media screen and  (min-width:576px) and (max-width:768px){
+    .heading {
+        font-size:20px;
+    }
+    .brand .brand-word{
+        width:100%;
+        position: absolute;
+        top:10%;
+
+    }
+    .brand .brand-word h4{
+        margin:11px 0;
+        text-align:center;
+        font-size:12px;
+    }
+    .brand .brand-word p{
+       
+        margin:0 auto 16px;
+        padding:0 40px;
+        font-size:10px;
+        line-height:19px;
+        text-align:center;
+    }
+}
+@media screen and  (max-width:576px){
+    .heading {
+        font-size:20px;
+    }
+    .brand .brand-word{
+        width:100%;
+        position: absolute;
+        top:10%;
+
+    }
+    .brand .brand-word h4{
+        margin:11px 0;
+        text-align:center;
+        font-size:12px;
+    }
+    .brand .brand-word p{
+        margin:0 auto 16px;
+        padding:0 40px;
+        font-size:10px;
+        line-height:19px;
+        text-align:center;
+        display:none;
+    }
+    .brand .brand-word p a{
+        display:none;
+    }
+}
+/*品牌介绍结束*/
+/* ====================================================================净水开始 */
+.clearwater{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+.clearwater .clearwater-word{
+    position: absolute;
+    top:30%;
+    left:20%;
+}
+.clearwater .clearwater-word h1{
+    margin-bottom:38px;
+}
+.clearwater .clearwater-word h2{
+    font-size:32px;
+    color:#a89382;
+    margin-bottom:14px;
+}
+.clearwater .clearwater-word h5{
+    font-size:16px;
+    color:#a4a4a4;
+    text-align:center;
+    margin-bottom:47px;
+}
+.clearwater .clearwater-word p{
+    text-align:center;
+}
+@media screen and (min-width:1200px) and (max-width:1635px){
+    .clearwater .clearwater-word{
+        position: absolute;
+        top:30%;
+        left:10%;
+    }
+    .clearwater .clearwater-word h1{
+        margin-bottom:38px;
+    }
+    .clearwater .clearwater-word h2{
+        font-size:32px;
+        color:#a89382;
+        margin-bottom:14px;
+    }
+    .clearwater .clearwater-word h5{
+        font-size:16px;
+        color:#a4a4a4;
+        text-align:center;
+        margin-bottom:47px;
+    }
+    .clearwater .clearwater-word p{
+        text-align:center;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .clearwater .clearwater-word{
+        position: absolute;
+        top:21%;
+        left:9%;
+    }
+    .clearwater .clearwater-word h1{
+        margin-bottom:38px;
+    }
+    .clearwater .clearwater-word h2{
+        font-size:25px;
+        color:#a89382;
+        margin-bottom:14px;
+    }
+    .clearwater .clearwater-word h5{
+        font-size:13px;
+        color:#a4a4a4;
+        text-align:center;
+        margin-bottom:47px;
+    }
+    .clearwater .clearwater-word p{
+        text-align:center;
+    }
+}
+@media screen and (max-width:768px){
+    .clearwater .clearwater-word{
+        position: absolute;
+        top:13%;
+        left:3%;
+    }
+    .clearwater .clearwater-word h1{
+        margin-bottom:20px;
+    }
+    .clearwater .clearwater-word h2{
+        font-size:16px;
+        color:#a89382;
+        margin-bottom:14px;
+    }
+    .clearwater .clearwater-word h5{
+        font-size:10px;
+        color:#a4a4a4;
+        text-align:center;
+        margin-bottom:47px;
+    }
+    .clearwater .clearwater-word p{
+        text-align:center;
+    }
+    .clearwater .clearwater-word p{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:571px) and (max-width:992px){
+    .clearwater .clearwater-word{
+        position: absolute;
+        top:12%;
+        left:3%;
+    }
+    .clearwater .clearwater-word h1{
+        margin-bottom:38px;
+    }
+    .clearwater .clearwater-word h2{
+        font-size:21px;
+        color:#a89382;
+        margin-bottom:14px;
+    }
+    .clearwater .clearwater-word h5{
+        font-size:13px;
+        color:#a4a4a4;
+        text-align:center;
+        margin-bottom:47px;
+    }
+    .clearwater .clearwater-word p{
+        text-align:center;
+    }
+}
+@media screen and (max-width:570px) {
+    .clearwater .clearwater-word{
+        position: absolute;
+        top:15%;
+        left:1%;
+    }
+    .clearwater .clearwater-word h1{
+        margin-bottom:20px;
+        font-size:16px;
+    }
+    .clearwater .clearwater-word h2{
+        font-size:11px;
+        color:#a89382;
+        margin-bottom:14px;
+        text-align:center;
+    }
+    .clearwater .clearwater-word h5{
+        width:120px;
+        margin:0 auto;
+        font-size:10px;
+        color:#a4a4a4;
+        text-align:center;
+        margin-bottom:47px;
+    }
+    .clearwater .clearwater-word p{
+        display:none;
+    }
+}
+/* ================================================================净水结束 */
+/* ================================================================ 产品开始 */
+.productSystem{
+    width:100%;
+    padding:18px 0;
+    background:#fff;
+    position: relative;
+}
+.productSystem .container{
+    display:flex;
+    justify-content: space-between;
+    /* margin:0 10px; */
+}
+.productSystem .container .left{
+    background:#ececec;
+    padding:56px 60px 0 60px;
+    background:url(../images/bg2.gif) repeat-y;
+}
+.productSystem .container .right{
+    background:#ececec;
+    padding:56px 60px 0 60px;
+    background:url(../images/bg2.gif) repeat-y;
+}
+
+.productSystem  h5{
+    text-align:center;
+    color:#aaaaaa;
+    margin:18px 0 39px;
+}
+.productSystem  p{
+    text-align:center;
+    margin-bottom:130px;
+}
+@media(min-width:992px) and (max-width:1200px){
+
+    .productSystem .container{
+        position: relative;
+        height:816px;
+    } 
+    .productSystem .container .left{
+        background:#ececec;
+        padding:56px 40px 0 40px;
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+    }
+    .productSystem .container .heading{
+        font-size:36px;
+    }
+    .productSystem .container .right{
+        background:#ececec;
+        padding:56px 40px 0 40px;
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+    }
+    .productSystem .container .im{
+        width:360px;
+        
+    }
+}
+@media(min-width:768px) and (max-width:992px){
+
+    .productSystem .container{
+        position: relative;
+        height:638px;
+    } 
+    .productSystem .container .left{
+        background:#ececec;
+        padding:56px 40px 0 40px;
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+    }
+    
+    .productSystem .container .right{
+        background:#ececec;
+        padding:56px 40px 0 40px;
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+    }
+    .productSystem .container .im{
+        width: 240px;
+        
+    }
+}
+@media(min-width:500px) and (max-width:767px){
+
+    
+    .productSystem .container{
+        position: relative;
+        height:540px;
+    } 
+    .productSystem .container .left{
+        background:#ececec;
+        padding:56px 40px 0 40px;
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:550px;
+    }
+    .productSystem .container h1{
+        margin:0;
+    }
+    .productSystem .container h5{
+        margin:0;
+    }
+    .productSystem .container p{
+        margin:0;
+    }
+    .productSystem .container .right{
+        background:#ececec;
+        padding:56px 40px 0 40px;
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:550px;
+    }
+    .productSystem .container .im{
+        width: 240px;
+    }
+}
+
+
+@media(max-width:500px) {
+
+    
+    .productSystem .container{
+        position: relative;
+        height:400px;
+    } 
+    .productSystem .container .left{
+        background:#ececec;
+        /* padding:56px 40px 0 40px; */
+        
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        padding:50px 10px 0 10px;
+    }
+    .productSystem .container h1{
+        margin:0;
+    }
+    .productSystem .container .heading{
+        font-size:11px;
+    }
+    .productSystem .container h5{
+        margin:0;
+        font-size:10px;
+    }
+    .productSystem .container p{
+        margin:0;
+        display: none;
+    }
+    .productSystem .container .right{
+        background:#ececec;
+        /* padding:56px 40px 0 40px; */
+        background:url(../images/bg2.gif) repeat-y;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:50px 10px 0 10px;
+    }
+    .productSystem .container .im{
+        width: 240px;
+    }
+}
+/* =======================================================产品结束 */
+/* =======================================================合作伙伴开始 */
+.partner{
+    position: relative;
+}
+.partner .partner-word{
+    position: absolute;
+    top:34%;
+    right:22%;
+}
+.partner .partner-word h1{
+    font-size:56px;
+    margin-bottom:56px;
+}
+.partner .partner-word h2{
+    text-align:center;
+    color:#519ba3;
+    font-size:32px;
+    margin-bottom:25px;
+    
+}
+.partner .partner-word h4{
+    width:308px;
+    text-align:center;
+    margin:0 auto;
+    color:#949494;
+    font-size:18px;
+    margin-bottom:48px;
+    line-height:30px;
+}
+.partner .partner-word p{
+    text-align:center;
+    
+}
+@media screen and (min-width:1200px) and (max-width:1400px){
+    .partner .partner-word{
+        position: absolute;
+        top:17%;
+        right:17%;
+    }
+    .partner .partner-word h1{
+        font-size:56px;
+        margin-bottom:30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .partner{
+        position: relative;
+    }
+    .partner .partner-word{
+        position: absolute;
+        top:17%;
+        right:17%;
+    }
+    .partner .partner-word h1{
+        font-size:36px;
+        margin-bottom:20px;
+    }
+    .partner .partner-word h2{
+        text-align:center;
+        color:#519ba3;
+        font-size:24px;
+        margin-bottom:25px;
+        
+    }
+    .partner .partner-word h4{
+        width:308px;
+        text-align:center;
+        margin:0 auto;
+        color:#949494;
+        font-size:14px;
+        margin-bottom:48px;
+        line-height:30px;
+    }
+    .partner .partner-word p{
+        text-align:center;
+        
+    }
+}
+@media screen and (min-width:351px) and (max-width:768px){
+    .partner{
+        position: relative;
+    }
+    .partner .partner-word{
+        position: absolute;
+        top:7%;
+        right:7%;
+    }
+    .partner .partner-word h1{
+        font-size:24px;
+        margin-bottom:10px;
+    }
+    .partner .partner-word h2{
+        text-align:center;
+        color:#519ba3;
+        font-size:16px;
+        margin-bottom:18px;
+        
+    }
+    .partner .partner-word h4{
+        width:248px;
+        text-align:center;
+        margin:0 auto;
+        color:#949494;
+        font-size:14px;
+        margin-bottom:28px;
+        line-height:28px;
+    }
+    .partner .partner-word p{
+        display: none;
+        
+    }
+}
+@media screen and (max-width:360px) {
+    .partner{
+        position: relative;
+    }
+    .partner .partner-word{
+        position: absolute;
+        top:4%;
+        right:10%;
+    }
+    .partner .partner-word h1{
+        font-size:24px;
+        margin-bottom:10px;
+    }
+    .partner .partner-word h2{
+        text-align:center;
+        color:#519ba3;
+        font-size:16px;
+        margin-bottom:18px;
+        
+    }
+    .partner .partner-word h4{
+        width:208px;
+        text-align:center;
+        margin:0 auto;
+        color:#949494;
+        font-size:14px;
+        margin-bottom:48px;
+        line-height:25px;
+        display: none;
+    }
+    .partner .partner-word p{
+        display:none;
+        
+    }
+}
+@media (min-width:360px) and (max-width:424px){
+    .partner .partner-word{
+        top:0%;
+    }
+    .partner .partner-word h4{
+        width:173px;
+        font-size:10px;
+    }
+    .partner .partner-word h2{
+        width:173px;
+        font-size:10px;
+        margin-bottom:12px;
+    }
+}
+/* ======================================合作伙伴结束 */
+/* 优势开始 */
+.advantage {
+    width: 100%;
+    background: #fff;
+    padding: 88px 0 57px;
+    position: relative;
+    z-index:1;
+}
+
+.advantage .row>div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.advantage .row>div .top-img {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 25px;
+}
+
+.advantage h4 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 21px;
+}
+
+.advantage h6 {
+    font-size: 12px;
+    color: #5a5a5a;
+    font-weight: 400;
+    width: 168px;
+    margin: 0 auto 20px;
+    line-height: 23px;
+}
+
+.advantage .bottom-img {
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+
+.advantage .bottom-img:hover {
+    border: 1px solid #46959d;
+}
+
+.advantage .telphone {
+    width: 127px;
+    padding: 9px 0 11px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.advantage .telphone:hover {
+    border: 1px solid #46959d;
+}
+
+.advantage .telphone h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #46959d;
+    font-weight: bold;
+}
+
+.advantage .telphone .telphone-firsth3 {
+    margin: 0;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
+
+.advantage .telphone h5 {
+    margin: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+@media (max-width:992px) {
+    .advantage {
+        width: 100%;
+        background: #fff;
+        padding: 40px 0 57px;
+    }
+}
+
+@media (max-width:768px) {
+    .advantage .row>div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .advantage .row>div .top-img {
+        width: 42px;
+        height: 42px;
+        margin: 0px;
+    }
+
+    .advantage h4 {
+        font-size: 16px;
+        color: #000;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .advantage h6 {
+        font-size: 12px;
+        color: #5a5a5a;
+        font-weight: 400;
+        width: 168px;
+        margin: 0;
+        line-height: 23px;
+    }
+
+    .advantage .bottom-img {
+        /* display:none; */
+    }
+
+    .advantage .telphone {
+        width: 102px;
+        margin: 0;
+        /* display:none; */
+    }
+
+    .advantage .telphone h3 {
+        margin: 0;
+        font-size: 12px;
+        color: #46959d;
+        font-weight: bold;
+    }
+
+    .advantage .telphone .telphone-firsth3 {
+        margin: 0;
+        font-size: 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:576px) {
+    .advantage .row>div .top-img {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .advantage h4 {
+        font-size: 12px;
+        color: #000;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .advantage .bottom-img {
+        display: none;
+    }
+
+    .advantage .telphone {
+        display: none;
+    }
+
+    .advantage h6 {
+        font-size: 10px;
+        color: #5a5a5a;
+        font-weight: 400;
+        width: 168px;
+        margin: 0;
+        line-height: 23px;
+    }
+}
+
+/* 优势结束 */
+/* 底部开始 */
+footer {
+    width: 100%;
+    background: #f2f2f2;
+    padding: 40px 0 46px;
+    position: relative;
+    z-index:2;
+}
+
+footer .container .part1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 18px;
+}
+
+footer .container .part1 nav a {
+    font-size: 12px;
+    color: #7e7e7e;
+    margin-right: 17px;
+}
+
+footer .container .part1 nav a:hover {
+    color: #454545;
+    text-decoration: none;
+}
+
+footer .container .part1 p {
+    font-size: 12px;
+    color: #7e7e7e;
+}
+
+footer .container .part2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container .part2 .left-nav a {
+    width: 30px;
+    height: 30px;
+    padding: 7px 3px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+}
+
+footer .container .part2 .right nav a {
+    color: #919191;
+    font-size: 12px;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid #d5d5d5;
+}
+footer .container .part2 .right nav a:hover {
+    color: #454545;
+    text-decoration: none;
+}
+
+footer .container .part2 .right nav a:nth-child(1) {
+    border-left: 0px solid #d5d5d5;
+}
+
+footer .container .part2 .right nav a:nth-child(4) {
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+footer .container .part2 .right p {
+    font-size: 12px;
+    color: #7e7e7e;
+    margin-top: 10px;
+    text-align: right;
+}
+
+footer .container .part2 .right p span {
+    margin-left: 24px;
+}
+
+@media(max-width:992px) {
+    footer .container .part1 nav {
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width:576px) {
+    footer .container .part1 nav a {
+        font-size: 12px;
+        color: #7e7e7e;
+        margin-right: 5px;
+    }
+    footer .container .part2 {
+        display: block;
+    }
+
+    footer .container .part2 .left-nav {
+        margin-bottom:10px;
+    }
+
+    footer .container .part2 .right nav a {
+        color: #919191;
+        font-size: 12px;
+        margin:0 15px 0 0; 
+        padding:0 15px 0 0;
+        border-left:0;
+        border-right: 1px solid #d5d5d5;
+    }
+    footer .container .part2 .right nav a:nth-child(4) {
+        margin:0 15px 0 0; 
+        padding:0 15px 0 0;
+        border-right: 0px solid #d5d5d5;
+    }
+    footer .container .part2 .right p {
+        font-size: 12px;
+        color: #7e7e7e;
+        margin-top: 10px;
+        text-align:left;
+    }
+}
+@media (max-width:360px){
+    footer .container .part1 nav a {
+        font-size: 12px;
+        color: #7e7e7e;
+        margin-right: 41px;
+    }
+    footer .container .part2 .right nav a {
+        color: #919191;
+        font-size: 12px;
+        margin:0 10px 0 0; 
+        padding:0 10px 0 0;
+        border-left:0;
+        border-right: 1px solid #d5d5d5;
+    }
+    footer .container .part2 .right nav a:nth-child(4) {
+        margin:0 10px 0 0; 
+        padding:0 10px 0 0;
+        border-right: 0px solid #d5d5d5;
+    }
+}
+@media (max-width:305px){
+    footer .container .part1 nav a {
+        font-size: 12px;
+        color: #7e7e7e;
+        margin-right: 16px;
+    }
+    footer .container .part2 .right nav a {
+        color: #919191;
+        font-size: 12px;
+        margin:0 21px 0 0; 
+        padding:0 21px 0 0;
+        border-left:0;
+        border-right: 1px solid #d5d5d5;
+    }
+    footer .container .part2 .right nav a:nth-child(2n) {
+        margin:0 21px 0 0; 
+        padding:0 21px 0 0;
+        border-right: 0px solid #d5d5d5;
+    }
+}
+/* 底部结束 */
+
+
+
+
+
+
+
+
+
+
+
